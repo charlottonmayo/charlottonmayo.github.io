@@ -10,7 +10,7 @@ paperurl: "https://doi.org/10.3390/risks12090141"
 authors: 'Charlotte Jamotton, Donatien Hainaut, and Thomas Hames'
 citation: 'Jamotton, C., Hainaut, D., & Hames, T. (2024). &quot;Insurance Analytics with Clustering Techniques.&quot; <i>Risks</i>, 12(9), 141. https://doi.org/10.3390/risks12090141'
 talks:
-bibtex:
+bibtex: |
  @article{Jamotton2024,
   title = {Insurance Analytics with Clustering Techniques},
   volume = {12},
