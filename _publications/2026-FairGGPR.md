@@ -1,31 +1,40 @@
 ---
-title: "FairGGPR: A multi-criteria fair Gaussian regressor for insurance pricing"
+title: "FairGGPR: a multi-criteria fair Gaussian regressor for insurance pricing"
+
 collection: publications
-category: manuscripts
+
+category: revision 
+# category: manuscripts
+
 permalink: /publication/2026-FairGGPR
-excerpt: "This article develops a Bayesian non-parametric regression framework for insurance pricing that incorporates multiple notions of fairness within a single predictive model."
-venue: "Under revision"
 
-paperurl: ""
+layout: publication
+excerpt: "This article develops a Bayesian non-parametric regression framework for insurance pricing that incorporates several fairness interventions within a single predictive model."
 
-authors: 'Charlotte Jamotton, Donatien Hainaut'
+date: 2026-04-01
 
-citation: 'Jamotton, C., & Hainaut, D. (2026+). "FairGGPR: A multi-criteria fair Gaussian fegressor for insurance pricing." Manuscript under revision.'
+# venue: "Under revision"
 
-bibtex: '
+# paperurl: ""
 
-@article{JamottonFairGGPR,
+authors: "Charlotte Jamotton, Donatien Hainaut"
 
-title = {A multi-criteria fair Gaussian regressor for insurance pricing'},
+citation: 'Jamotton, C., & Hainaut, D. (2026). "FairGGPR: A Multi-Criteria Fair Gaussian Regressor for Insurance Pricing." Manuscript under revision.'
 
-author = {Jamotton, Charlotte and Hainaut, Donatien},
+bibtex: |
+  @article{Jamotton2026FairGGPR,
+    title = {A Multi-Criteria Fair Gaussian Regressor for Insurance Pricing},
+    author = {Jamotton, Charlotte and Hainaut, Donatien},
+    year = {2026},
+    note = {Manuscript under revision}
+  }
 
-year = {2026+},
+keywords: "Under revision"
 
-note = {Manuscript under revision}*
+codeurl: "https://github.com/..."
+talkurl: "/talks/FairGGPR/"
+# pdfurl: "/files/FairGGPR.pdf"
 
-}*'
-
-keywords: {'under revision'}'
 ---
+
 This article develops a multi-criteria fair Generalized Gaussian Process Regression framework for insurance pricing, allowing multiple notions of fairness to be incorporated into a single Bayesian non-parametric model.

@@ -7,6 +7,114 @@ author_profile: true
 
 {% include base_path %}
 
+<div class="teaching-intro">
+  <p>
+    During my PhD at UCLouvain, I had the opportunity to teach across
+    Bachelor's and Master's programmes in statistics, actuarial science,
+    and programming. I mainly led exercise and practical sessions, helping
+    students connect theoretical material with hands-on problem solving
+    and data analysis.
+  </p>
+</div>
+
+<div class="teaching-grid">
+
 {% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+
+
+<article class="teaching-card">
+
+  <div class="teaching-card-header">
+
+    <div class="teaching-card-main">
+
+      <h2 class="teaching-title">
+        {{ post.title }}
+      </h2>
+
+      <div class="teaching-meta">
+
+        {% if post.type %}
+          <span class="teaching-type">
+            {{ post.type }}
+          </span>
+        {% endif %}
+
+        {% if post.venue %}
+          <span class="teaching-separator">·</span>
+          <span class="teaching-venue">
+            {{ post.venue }}
+          </span>
+        {% endif %}
+
+      </div>
+
+    </div>
+
+    {% if post.teaching_period %}
+      <div class="teaching-year">
+        {{ post.teaching_period }}
+      </div>
+    {% endif %}
+
+  </div>
+
+
+  {% if post.teaching_summary %}
+    <div class="teaching-summary">
+      {{ post.teaching_summary }}
+    </div>
+  {% endif %}
+
+
+  <details class="teaching-details">
+
+    <summary class="teaching-summary-button">
+
+      <span class="teaching-more-label">
+        Show more
+      </span>
+
+      <span class="teaching-less-label">
+        Show less
+      </span>
+
+      <img
+        src="{{ base_path }}/images/icons/showmore.svg"
+        alt=""
+        class="teaching-showmore-icon">
+
+    </summary>
+
+    <div class="teaching-expanded">
+      {{ post.content }}
+    </div>
+
+  </details>
+
+
+  {% if post.url %}
+
+    <div class="teaching-links">
+
+      <a
+        href="{{ post.course_url }}" 
+        target="_blank"
+        rel="noopener"
+        class="teaching-course-link">
+
+        <span>Course page</span>
+        <span class="teaching-arrow">↗</span>
+
+      </a>
+
+    </div>
+
+  {% endif %}
+
+</article>
+
+
 {% endfor %}
+
+</div>

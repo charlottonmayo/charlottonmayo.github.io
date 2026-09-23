@@ -1,5 +1,9 @@
 {% include base_path %}
 
+<!-- DM Sans -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <!-- start custom head snippets -->
 
 <!-- Support for Academicons -->
@@ -20,3 +24,20 @@
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
 <!-- end custom head snippets -->
+ <script>
+function copyPublicationText(button) {
+  const text = button.dataset.copy;
+
+  navigator.clipboard.writeText(text).then(() => {
+
+    const originalTitle = button.getAttribute("title");
+
+    button.setAttribute("title", "Copied!");
+
+    setTimeout(() => {
+      button.setAttribute("title", originalTitle);
+    }, 1500);
+
+  });
+}
+</script>

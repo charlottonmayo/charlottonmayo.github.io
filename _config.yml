@@ -23,14 +23,14 @@ repository               : "charlottonmayo/charlottonmayo.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile2.jpg"
   name             : "Charlotte Jamotton"
   pronouns         : # example: "she/her"  
-  bio              : "Postdoctoral researcher in Actuarial Science"
+  bio              : "Postdoctoral researcher in actuarial science at UQÀM"
   location         : "Montréal, QC, Canada"
-  employer         : "Université du Québec à Montréal (UQAM)"
+  employer         : "Université du Québec à Montréal"
   uri              : # URL
-  email            : "charlotte.jamotton@uclouvain.be" 
+  email            : "jamotton.charlotte@uqam.ca" 
 
   # Academic websites
   academia         : # URL
@@ -86,6 +86,8 @@ author:
 publication_category:
   books:
     title: 'Books'
+  revision:
+    title: 'Under revision'
   manuscripts:
     title: 'Journal Articles'    
   conferences:
@@ -109,22 +111,23 @@ comments:
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
 staticman:
-  allowedFields          : ['name', 'email', 'url', 'message']
-  branch                 : "gh-pages" # "master", "gh-pages"
-  commitMessage          : "New comment."
-  filename               : comment-{@timestamp}
-  format                 : "yml"
-  moderation             : true
-  path                   : "_data/comments/{options.slug}"
-  requiredFields         : ['name', 'email', 'message']
+  allowedFields: ['name', 'email', 'url', 'message']
+  branch: "gh-pages"
+  commitMessage: "New comment."
+  filename: comment-{@timestamp}
+  format: "yml"
+  moderation: true
+  path: "_data/comments/{options.slug}"
+  requiredFields: ['name', 'email', 'message']
   transforms:
-    email                : "md5"
+    email: "md5"
   generatedFields:
     date:
-      type               : "date"
+      type: "date"
       options:
-        format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
-atom_feed:
+        format: "iso8601"
+  
+  atom_feed:
   hide                   : false     # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 

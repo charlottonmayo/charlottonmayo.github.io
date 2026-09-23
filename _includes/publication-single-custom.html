@@ -1,0 +1,236 @@
+<div class="publication-item">
+
+  <!-- Year -->
+  <div class="publication-year">
+    {{ post.date | date: "%Y" }}
+  </div>
+
+  <!-- Publication content -->
+  <div class="publication-content">
+
+    <!-- Title -->
+    <h2 class="publication-title">
+      <a href="{{ post.paperurl }}">{{ post.title }}</a>
+    </h2>
+
+    <!-- Type + journal -->
+    <div class="publication-meta">
+
+      {% if post.keywords %}
+        <span class="publication-type">{{ post.keywords }}</span>
+      {% endif %}
+
+      {% if post.venue %}
+        <span class="publication-separator">·</span>
+        <span>{{ post.venue }}</span>
+      {% endif %}
+
+    </div>
+
+    <!-- Authors -->
+    <div class="publication-authors">
+      {% assign authors = post.authors | split: ", " %}
+
+      {% for author in authors %}
+        {{ author }}{% unless forloop.last %} <span class="publication-separator">·</span> {% endunless %}
+      {% endfor %}
+    </div>
+
+    <!-- Short description -->
+    {% if post.excerpt %}
+      <p class="publication-excerpt">
+        {{ post.excerpt }}
+      </p>
+    {% endif %}
+
+
+    <!-- Show more -->
+    {% if post.highlights %}
+      <details class="publication-details">
+
+        <summary>
+          <img
+            src="{{ base_path }}/images/icons/showmore.svg"
+            alt=""
+            class="show-more-icon">
+          <span class="show-more-label">Show more</span>
+          <span class="show-less-label">Show less</span>
+        </summary>
+
+        <div class="publication-highlights">
+
+          <p class="highlights-title">Key highlights</p>
+
+          <ul>
+            {% for highlight in post.highlights %}
+              <li>{{ highlight }}</li>
+            {% endfor %}
+          </ul>
+
+        </div>
+
+      </details>
+    {% endif %}
+
+
+    <!-- Publication links -->
+    <div class="publication-links">
+
+      {% if post.paperurl %}
+        <a href="{{ post.paperurl }}"
+          class="publication-action"
+          title="Open DOI"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <img
+            src="{{ base_path }}/images/icons/doi.svg"
+            alt="">
+
+          <span>DOI</span>
+
+        </a>
+      {% endif %}
+
+      {% if post.bibtex %}
+        <button
+          class="publication-action publication-copy"
+          onclick="copyPublicationText(this)"
+          data-copy="{{ post.bibtex | escape }}"
+          title="Copy BibTeX citation">
+
+          <img
+            src="{{ base_path }}/images/icons/bibtex.svg"
+            alt="">
+
+          <span>BibTeX</span>
+
+        </button>
+      {% endif %}
+
+      {% if post.apa %}
+        <button
+          class="publication-action publication-copy"
+          onclick="copyPublicationText(this)"
+          data-copy="{{ post.apa | escape }}"
+          title="Copy APA citation">
+
+          <img
+            src="{{ base_path }}/images/icons/apa.svg"
+            alt="">
+
+          <span>APA</span>
+
+        </button>
+      {% endif %}
+      
+      {% if post.pdfurl %}
+        <a href="{{ post.pdfurl }}"
+          class="publication-action"
+          title="Open PDF"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <img
+            src="{{ base_path }}/images/icons/PDF.svg"
+            alt="">
+
+          <span>PDF</span>
+
+        </a>
+      {% endif %}
+
+      {% assign publication_talks = site.talks | where: "article_url", post.permalink %}
+
+      {% if publication_talks.size > 0 %}
+
+        <details class="publication-talks">
+
+          <summary class="publication-action">
+
+            <img
+              src="{{ base_path }}/images/icons/talk.svg"
+              alt="">
+
+            <span>Talks</span>
+
+          </summary>
+
+
+          <div class="publication-talk-list">
+
+            {% for talk in publication_talks reversed %}
+
+              <a
+                href="{{ talk.url }}"
+                class="publication-talk">
+
+                <div class="publication-talk-info">
+
+                  <div class="publication-talk-title">
+                    {{ talk.venue }}
+                  </div>
+
+                  <div class="publication-talk-meta">
+
+                    {{ talk.date | date: "%d %B %Y" }}
+
+                    {% if talk.location %}
+                      <span>·</span>
+                      {{ talk.location }}
+                    {% endif %}
+
+                  </div>
+
+                </div>
+
+                <span class="publication-talk-arrow">→</span>
+
+              </a>
+
+            {% endfor %}
+
+          </div>
+
+        </details>
+
+      {% endif %}
+
+      {% if post.slidesurl %}
+        <a href="{{ post.slidesurl }}"
+          class="publication-action"
+          title="View slides"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <img
+            src="{{ base_path }}/images/icons/slides.svg"
+            alt="">
+
+          <span>Slides</span>
+
+        </a>
+      {% endif %}
+
+      {% if post.codeurl %}
+        <a href="{{ post.codeurl }}"
+          class="publication-action"
+          title="View code"
+          target="_blank"
+          rel="noopener noreferrer">
+
+          <img
+            src="{{ base_path }}/images/icons/code.png"
+            alt="">
+
+          <span>Code</span>
+
+        </a>
+      {% endif %}
+
+
+    </div>
+
+  </div>
+
+</div>

@@ -1,13 +1,35 @@
 ---
 title: "Statistique approfondie"
-collection: teaching
-type: "Bachelor course"
-permalink: /teaching/LINGE1214
-venue: "UCLouvain, Faculté des sciences (SC)"
-date: 2022--2025
-location: "Louvain-la-Neuve, Belgium"
----
-Teaching assistant for LINGE1214 'Statistique approfondie' during the 2022--2023, 2023--2024, and 2024--2025 academic years.
-======
-Conducted exercise and practical sessions for Bachelor's students, covering advanced statistical methods and their application to data analysis.
 
+collection: teaching
+
+type: "Bachelor course"
+
+permalink: /teaching/LINGE1214
+
+venue: "UCLouvain, Faculté des sciences (SC)"
+
+date: 2022-09-01
+
+location: "Louvain-la-Neuve, Belgium"
+
+course_url : "https://uclouvain.be/cours-2025-linge1214"
+
+teaching_period: "2022–2025"
+
+teaching_summary: >
+  Teaching assistant for Bachelor's students, leading exercise and practical sessions in advanced statistics.
+
+---
+
+### Main topics
+
+- Statistical inference
+- Estimation and hypothesis testing
+- Regression methods
+- Statistical modelling
+- Data analysis and interpretation
+
+### My role
+
+I prepared and led exercise sessions, worked through statistical problems with students, and helped them develop the intuition needed to move from statistical theory to practical data analysis.

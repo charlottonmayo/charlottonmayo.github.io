@@ -1,16 +1,27 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks & Seminars"
 permalink: /talks/
 author_profile: true
 ---
 
-{% if site.talkmap_link == true %}
+{% include base_path %}
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+<div class="talks-intro">
+  <p>
+    Talks, seminars, conference presentations, and research workshops
+    covering my work in actuarial science.
+  </p>
+</div>
 
-{% endif %}
+<div class="talks-list">
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+  {% assign talks = site.talks | sort: "date" | reverse %}
+
+  {% for post in talks %}
+
+    {% include talk-single-custom.html %}
+
+  {% endfor %}
+
+</div>
