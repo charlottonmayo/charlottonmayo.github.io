@@ -103,7 +103,7 @@ author_profile: true
     PhD research at ISBA (UCLouvain) in actuarial science under the supervision of
     <a href="https://sites.google.com/view/donatienhainaut/home">
   <strong>Prof. Donatien Hainaut</strong></a>, focusing on statistical and
-    machine learning methods for non-life insurance.
+    machine learning methods for non-life insurance. My PhD research was funded through the Excellence of Science (EoS) programme, a joint research funding initiative of the F.R.S.-FNRS (Fédération Wallonie-Bruxelles) and the FWO (Flanders Research Foundation).
   </p>
 
   <details>
