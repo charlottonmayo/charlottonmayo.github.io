@@ -1,0 +1,16 @@
+cd C:\Users\Charl\charlottonmayo.github.io
+git status
+git add .
+git commit -m "Update website"
+git push
+
+git fetch origin
+git log --oneline --decorate --graph --all -10
+git merge origin/master
+:wq
+git status
+# check if it says:
+Your branch is ahead of 'origin/master' by 2 commits.
+nothing to commit, working tree clean
+
+git push
