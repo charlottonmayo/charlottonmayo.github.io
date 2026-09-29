@@ -753,25 +753,18 @@
    TALK SHOW MORE
    ========================================================================== */
 
-.talk-description-preview {
-  max-width: 800px;
-  margin: 5px 0 10px 0;
-  font-size: 0.9em;
-  line-height: 1.65;
-}
-
 .talk-details {
-  margin-top: 6px;
+  margin-top: 8px;
 }
 
 .talk-summary {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   cursor: pointer;
   list-style: none;
-  color: #7A8991;
-  font-size: 0.78em;
+  color: #8A969D;
+  font-size: 0.76em;
   font-weight: 500;
   transition: color 0.2s ease;
 }
@@ -788,13 +781,20 @@
   display: none;
 }
 
-.talk-showmore-icon {
-  width: 14px;
-  height: 14px;
-  object-fit: contain;
-  opacity: 0.65;
+/* Arrow */
+
+.talk-summary-arrow {
+  display: inline-block;
+  font-size: 0.95em;
+  line-height: 1;
   transition: transform 0.2s ease;
 }
+
+.talk-details[open] .talk-summary-arrow {
+  transform: rotate(180deg);
+}
+
+/* Labels */
 
 .talk-less-label {
   display: none;
@@ -808,9 +808,7 @@
   display: inline;
 }
 
-.talk-details[open] .talk-showmore-icon {
-  transform: rotate(180deg);
-}
+/* Expanded content */
 
 .talk-details .talk-description {
   margin-top: 12px;
@@ -1601,7 +1599,6 @@
   color: #555;
 }
 
-
 /* --------------------------------------------------------------------------
    Teaching cards
    -------------------------------------------------------------------------- */
@@ -1616,14 +1613,10 @@
 .teaching-card {
   width: 100%;
   box-sizing: border-box;
-
   padding: 24px 26px;
-
   border: 1px solid #DCE6EB;
   border-radius: 12px;
-
   background: #FFFFFF;
-
   transition:
     border-color 0.2s ease,
     box-shadow 0.2s ease,
@@ -1636,7 +1629,6 @@
   transform: translateY(-1px);
 }
 
-
 /* --------------------------------------------------------------------------
    Header
    -------------------------------------------------------------------------- */
@@ -1645,7 +1637,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-
   gap: 25px;
   margin-bottom: 12px;
 }
@@ -1656,7 +1647,6 @@
 
 .teaching-title {
   margin: 0 0 8px 0;
-
   font-size: 1.12em;
   font-weight: 600;
   line-height: 1.4;
@@ -1664,17 +1654,12 @@
 
 .teaching-year {
   flex-shrink: 0;
-
   padding-top: 2px;
-
   color: #7A8991;
-
   font-size: 0.82em;
   font-weight: 600;
-
   white-space: nowrap;
 }
-
 
 /* --------------------------------------------------------------------------
    Type + venue
@@ -1684,23 +1669,17 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-
   gap: 6px;
-
   font-size: 0.82em;
 }
 
 .teaching-type {
   display: inline-flex;
   align-items: center;
-
   padding: 3px 8px;
-
   border-radius: 5px;
-
   background: #EAF2F6;
   color: #356A8A;
-
   font-size: 0.9em;
   font-weight: 600;
 }
@@ -1713,7 +1692,6 @@
   color: #7A8991;
 }
 
-
 /* --------------------------------------------------------------------------
    Summary
    -------------------------------------------------------------------------- */
@@ -1721,16 +1699,13 @@
 .teaching-summary {
   margin-top: 14px;
   margin-bottom: 16px;
-
   color: #555;
-
   font-size: 0.9em;
   line-height: 1.65;
 }
 
-
 /* --------------------------------------------------------------------------
-   Show more
+   Show more / Show less
    -------------------------------------------------------------------------- */
 
 .teaching-details {
@@ -1740,17 +1715,12 @@
 .teaching-summary-button {
   display: inline-flex;
   align-items: center;
-
-  gap: 5px;
-
+  gap: 6px;
   cursor: pointer;
   list-style: none;
-
   color: #7A8991;
-
   font-size: 0.76em;
   font-weight: 500;
-
   transition: color 0.2s ease;
 }
 
@@ -1766,22 +1736,20 @@
   display: none;
 }
 
-
-/* Show-more icon */
-
-.teaching-showmore-icon {
-  width: 15px;
-  height: 15px;
-
-  object-fit: contain;
-
-  opacity: 0.65;
-
+.teaching-summary-arrow {
+  display: inline-block;
+  margin-left: 1px;
+  font-size: 1em;
+  line-height: 1;
   transition: transform 0.2s ease;
+  transform: rotate(0deg);
 }
 
+.teaching-details[open] .teaching-summary-arrow {
+  transform: rotate(90deg);
+}
 
-/* Open state */
+/* Labels */
 
 .teaching-less-label {
   display: none;
@@ -1795,11 +1763,6 @@
   display: inline;
 }
 
-.teaching-details[open] .teaching-showmore-icon {
-  transform: rotate(180deg);
-}
-
-
 /* --------------------------------------------------------------------------
    Expanded content
    -------------------------------------------------------------------------- */
@@ -1807,11 +1770,8 @@
 .teaching-expanded {
   margin-top: 15px;
   padding-top: 15px;
-
   border-top: 1px solid #EEF2F4;
-
   color: #555;
-
   font-size: 0.88em;
   line-height: 1.65;
 }
@@ -1819,7 +1779,6 @@
 .teaching-expanded h3 {
   margin-top: 1.2em;
   margin-bottom: 0.5em;
-
   font-size: 0.95em;
   font-weight: 600;
 }
@@ -1837,7 +1796,6 @@
   margin-bottom: 5px;
 }
 
-
 /* --------------------------------------------------------------------------
    Course page
    -------------------------------------------------------------------------- */
@@ -1845,21 +1803,16 @@
 .teaching-links {
   margin-top: 17px;
   padding-top: 14px;
-
   border-top: 1px solid #EEF2F4;
 }
 
 .teaching-course-link {
   display: inline-flex;
   align-items: center;
-
   gap: 5px;
-
   color: #356A8A;
-
   font-size: 0.8em;
   font-weight: 600;
-
   text-decoration: none;
 }
 
@@ -1874,7 +1827,6 @@
 .teaching-course-link:hover .teaching-arrow {
   transform: translate(2px, -2px);
 }
-
 
 /* --------------------------------------------------------------------------
    Mobile
@@ -1899,6 +1851,7 @@
   }
 
 }
+
 
 /* ==========================================================================
    CV

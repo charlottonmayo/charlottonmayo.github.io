@@ -8,7 +8,7 @@ redirect_from:
 ---
 I'm a belgo-luxembourgeoise actuarial researcher currently doing a postdoc at [UQÀM](https://math.UQÀM.ca/) in Montréal 🍁, where I spend my days somewhere between mathematics, (preferably bayesian) statistics, machine learning, and (fair) insurance pricing.
 
-I recently (August 2026) completed my PhD at [UCLouvain](https://uclouvain.be/en/research-institutes/lidam/isba) in Belgium under the supervision of Prof. [Donatien Hainaut](https://sites.google.com/view/donatienhainaut/home). You can find my PhD thesis titled *Non-life insurance analytics* [here]().
+I recently (August 2026) completed my PhD at [UCLouvain](https://uclouvain.be/en/research-institutes/lidam/isba) in Belgium under the supervision of Prof. [Donatien Hainaut](https://sites.google.com/view/donatienhainaut/home). You can find my PhD thesis titled *Non-life insurance analytics* [here](https://research.dial.uclouvain.be/entities/publication/2d7c3c28-4938-4d22-af0e-9ebf353af9a2).
 I am now happily continuing down the research rabbit hole on the other side of the Atlantic with Prof. [Arthur Charpentier](https://freakonometrics.github.io/) (UQÀM).
 
 My research focuses on using modern statistical and machine learning methods to tackle problems in insurance pricing, with a particular interest in bayesian modeling, fairness, interpretability, uncertainty, and synthetic data.

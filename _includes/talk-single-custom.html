@@ -118,9 +118,36 @@
     <!-- Description -->
     {% if post.content %}
 
-      <div class="talk-description">
-        {{ post.content }}
+      {% assign paragraphs = post.content | split: "</p>" %}
+      {% assign paragraph_count = paragraphs | size %}
+
+      <div class="talk-description-preview">
+        {{ paragraphs[0] }}</p>
       </div>
+
+      {% if paragraph_count > 2 %}
+
+        <details class="talk-details">
+
+          <summary class="talk-summary">
+            <span class="talk-more-label">Show more</span>
+            <span class="talk-less-label">Show less</span>
+            <span class="talk-summary-arrow">↓</span>
+          </summary>
+
+          <div class="talk-description">
+
+            {% for paragraph in paragraphs offset:1 %}
+              {% if paragraph != "" %}
+                {{ paragraph }}</p>
+              {% endif %}
+            {% endfor %}
+
+          </div>
+
+        </details>
+
+      {% endif %}
 
     {% endif %}
 

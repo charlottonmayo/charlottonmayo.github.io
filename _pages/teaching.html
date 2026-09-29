@@ -21,7 +21,6 @@ author_profile: true
 
 {% for post in site.teaching reversed %}
 
-
 <article class="teaching-card">
 
   <div class="teaching-card-header">
@@ -67,38 +66,41 @@ author_profile: true
   {% endif %}
 
 
-  <details class="teaching-details">
+  {% if post.content and post.content != "" %}
 
-    <summary class="teaching-summary-button">
+    <details class="teaching-details">
 
-      <span class="teaching-more-label">
-        Show more
-      </span>
+      <summary class="teaching-summary-button">
 
-      <span class="teaching-less-label">
-        Show less
-      </span>
+        <span class="teaching-more-label">
+          Show more
+        </span>
 
-      <img
-        src="{{ base_path }}/images/icons/showmore.svg"
-        alt=""
-        class="teaching-showmore-icon">
+        <span class="teaching-less-label">
+          Show less
+        </span>
 
-    </summary>
+        <span class="teaching-showmore-arrow">
+          ↓
+        </span>
 
-    <div class="teaching-expanded">
-      {{ post.content }}
-    </div>
+      </summary>
 
-  </details>
+      <div class="teaching-expanded">
+        {{ post.content }}
+      </div>
+
+    </details>
+
+  {% endif %}
 
 
-  {% if post.url %}
+  {% if post.course_url %}
 
     <div class="teaching-links">
 
       <a
-        href="{{ post.course_url }}" 
+        href="{{ post.course_url }}"
         target="_blank"
         rel="noopener"
         class="teaching-course-link">
@@ -113,7 +115,6 @@ author_profile: true
   {% endif %}
 
 </article>
-
 
 {% endfor %}
 
