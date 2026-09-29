@@ -750,6 +750,75 @@
 }
 
 /* ==========================================================================
+   TALK SHOW MORE
+   ========================================================================== */
+
+.talk-description-preview {
+  max-width: 800px;
+  margin: 5px 0 10px 0;
+  font-size: 0.9em;
+  line-height: 1.65;
+}
+
+.talk-details {
+  margin-top: 6px;
+}
+
+.talk-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  list-style: none;
+  color: #7A8991;
+  font-size: 0.78em;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.talk-summary:hover {
+  color: #356A8A;
+}
+
+.talk-summary::-webkit-details-marker {
+  display: none;
+}
+
+.talk-summary::marker {
+  display: none;
+}
+
+.talk-showmore-icon {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  opacity: 0.65;
+  transition: transform 0.2s ease;
+}
+
+.talk-less-label {
+  display: none;
+}
+
+.talk-details[open] .talk-more-label {
+  display: none;
+}
+
+.talk-details[open] .talk-less-label {
+  display: inline;
+}
+
+.talk-details[open] .talk-showmore-icon {
+  transform: rotate(180deg);
+}
+
+.talk-details .talk-description {
+  margin-top: 12px;
+}
+
+
+
+/* ==========================================================================
    PUBLICATION TALKS
    ========================================================================== */
 
