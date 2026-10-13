@@ -109,9 +109,9 @@ author_profile: true
 
   <details>
     <summary>
-      <img src="{{ base_path }}/images/icons/showmore.svg" alt="" class="show-more-icon">
-      <span class="show-more-label">Show more</span>
-      <span class="show-less-label">Show less</span>
+      <span class="talk-more-label">Show more</span>
+      <span class="talk-less-label">Show less</span>
+      <span class="talk-summary-arrow">↓</span>
     </summary>
 
     <div class="education-expanded">
