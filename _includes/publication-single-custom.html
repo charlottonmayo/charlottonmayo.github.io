@@ -43,21 +43,21 @@
       </p>
     {% endif %}
 
-
+    
     <!-- Show more -->
     {% if post.highlights %}
-      <details class="publication-details">
+      <details class="publication-details talk-details">
 
-        <summary>
+        <summary class="talk-summary">
           <img
             src="{{ base_path }}/images/icons/showmore.svg"
             alt=""
-            class="show-more-icon">
-          <span class="show-more-label">Show more</span>
-          <span class="show-less-label">Show less</span>
+            class="talk-summary-arrow">
+          <span class="talk-more-label">Show more</span>
+          <span class="talk-less-label">Show less</span>
         </summary>
 
-        <div class="publication-highlights">
+        <div class="publication-highlights talk-description">
 
           <p class="highlights-title">Key highlights</p>
 
@@ -71,6 +71,8 @@
 
       </details>
     {% endif %}
+```
+
 
 
     <!-- Publication links -->
