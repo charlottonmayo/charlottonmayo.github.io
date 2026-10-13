@@ -47,9 +47,9 @@ author_profile: true
 
   <details>
     <summary>
-      <span class="show-more-label">Show more</span>
-      <span class="show-less-label">Show less</span>
-      <span class="show-summary-arrow">↓</span>
+      <span class="talk-more-label">Show more</span>
+      <span class="talk-less-label">Show less</span>
+      <span class="talk-summary-arrow">↓</span>
     </summary>
 
     <div class="education-expanded">
@@ -117,9 +117,9 @@ author_profile: true
 
   <details>
     <summary>
-      <span class="show-more-label">Show more</span>
-      <span class="show-less-label">Show less</span>
-      <span class="show-summary-arrow">↓</span>
+      <span class="talk-more-label">Show more</span>
+      <span class="talk-less-label">Show less</span>
+      <span class="talk-summary-arrow">↓</span>
     </summary>
 
     <div class="education-expanded">
@@ -185,9 +185,9 @@ author_profile: true
 
   <details>
     <summary>
-      <span class="show-more-label">Show more</span>
-      <span class="show-less-label">Show less</span>
-      <span class="show-summary-arrow">↓</span>
+      <span class="talk-more-label">Show more</span>
+      <span class="talk-less-label">Show less</span>
+      <span class="talk-summary-arrow">↓</span>
     </summary>
 
     <div class="education-expanded">
