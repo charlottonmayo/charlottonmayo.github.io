@@ -174,8 +174,9 @@ author_profile: true
   <ul>
     <li><em>Annals of Actuarial Science</em></li>
     <li><em>Insurance: Mathematics and Economics</em></li>
+    <li><em>ASTIN Bulletin: The Journal of the IAA</em></li>
     <li><em>International Journal of Data Science and Analytics</em></li>
-    <li><em>Health Services Insights</em></li>
+    <!-- <li><em>Health Services Insights</em></li> -->
   </ul>
 
 </div>

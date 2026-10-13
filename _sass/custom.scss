@@ -1308,21 +1308,21 @@
 
 
 /* --------------------------------------------------------------------------
-   Show more / Show less
+   Show more / Show less — styled like TALK SHOW MORE
    -------------------------------------------------------------------------- */
 
 .education-content details {
-  margin-top: 4px;
+  margin-top: 8px;
 }
 
 .education-content summary {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
   cursor: pointer;
   list-style: none;
-  color: #7A8991;
-  font-size: 0.78em;
+  color: #8A969D;
+  font-size: 0.76em;
   font-weight: 500;
   transition: color 0.2s ease;
 }
@@ -1339,11 +1339,12 @@
   display: none;
 }
 
+/* Arrow icon */
 .education-content .show-more-icon {
   width: 14px;
   height: 14px;
   object-fit: contain;
-  opacity: 0.65;
+  opacity: 0.8;
   transition: transform 0.2s ease;
 }
 
@@ -1351,6 +1352,7 @@
   transform: rotate(180deg);
 }
 
+/* Labels */
 .education-content .show-more-label {
   display: inline;
 }
@@ -1709,7 +1711,7 @@
    -------------------------------------------------------------------------- */
 
 .teaching-details {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .teaching-summary-button {
@@ -1718,7 +1720,7 @@
   gap: 6px;
   cursor: pointer;
   list-style: none;
-  color: #7A8991;
+  color: #8A969D;
   font-size: 0.76em;
   font-weight: 500;
   transition: color 0.2s ease;
@@ -1746,7 +1748,7 @@
 }
 
 .teaching-details[open] .teaching-summary-arrow {
-  transform: rotate(90deg);
+  transform: rotate(180deg);
 }
 
 /* Labels */
