@@ -23,7 +23,7 @@ repository               : "charlottonmayo/charlottonmayo.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile3.jpg"
+  avatar           : "profile3.png"
   name             : "Charlotte Jamotton"
   pronouns         : # example: "she/her"  
   bio              : "Postdoctoral researcher in actuarial science at UQÀM"
