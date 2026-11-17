@@ -7,6 +7,7 @@ venue: "Quantact and Université de Sherbrooke Seminar"
 date: 2026-11-27
 location: "Sherbrooke, QC, Canada"
 event_type: "Seminar"
+# article_url: "/publication/2026-FairGGPR"
 upcoming: true
 layout: talk
 ---
